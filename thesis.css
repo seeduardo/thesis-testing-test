@@ -11,6 +11,12 @@ h1 {
 h5 {
   margin: 0;
   padding-top: 10px;
+
+}
+
+#home-link {
+  text-align: left;
+  float: left;
 }
 
 h6 {
@@ -19,6 +25,14 @@ h6 {
 
 span {
   color: rgb(128 234 172);
+}
+
+button {
+  background-color: rgb(128 234 172);
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .container {
@@ -105,17 +119,20 @@ input {
 }
 
 ul {
+  width: 100%;
   text-align: right;
+  float: right;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  left: 0;
 }
 
 li {
   display: inline;
 }
 
-.blah {
-  background-color: rgb(122	96 230)
+#domain-div {
+  padding-top: 110px;
 }
+
+/* #learn-div {
+  padding-top: 160px;
+} */
