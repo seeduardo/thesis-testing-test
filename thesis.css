@@ -203,7 +203,7 @@ li {
   width: 100%;
   display: inline-block;
   position: relative;
-  bottom: -100vh;
+  bottom: -110vh;
 }
 
 #ready-div {
@@ -212,7 +212,8 @@ li {
   width: 100%;
   display: inline-block;
   position: relative;
-  bottom: -110vh;
+  bottom: -100vh;
+  height: 40px;
 }
 
 #ready-div:before {
@@ -221,7 +222,7 @@ li {
   left: 0;
   top: -100px;
   width: 100%;
-  height: 136px;
+  height: 290px;
   background: rgb(246	249	252);
   -webkit-transform: skewY(-7.5deg);
   -moz-transform: skewY(-7.5deg);
