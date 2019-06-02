@@ -145,14 +145,14 @@ input {
   border-radius: 5px;
 }
 
-ul {
+#section-1 ul {
   width: 100%;
   text-align: right;
   float: right;
   list-style-type: none;
 }
 
-li {
+#section-1 li {
   display: inline;
 }
 
@@ -162,15 +162,15 @@ li {
 
 #domain-div:after {
   max-width: 36%;
-    font-size: 10px;
-    right: 40%;
-    left: 40%;
-    content: 'LEARN HOW WE CAN ENHANCE YOUR BUSINESS';
-    background: rgb(122	96 230);
-    position: absolute;
-    bottom: -123px;
-    z-index: 1;
-    text-align: center;
+  font-size: 10px;
+  right: 40%;
+  left: 40%;
+  content: 'LEARN HOW WE CAN ENHANCE YOUR BUSINESS';
+  background: rgb(122	96 230);
+  position: absolute;
+  bottom: -123px;
+  z-index: 1;
+  text-align: center;
 }
 
 #learn-div:after {
@@ -201,14 +201,22 @@ li {
   background: rgb(122	96 230);
   color: white;
   width: 100%;
-  display: inline-block;
+  height: 25vh;
   position: relative;
   bottom: -110vh;
+  justify-content: flex-end;
+}
+
+#footer-div ul {
+  /* width: 100%; */
+  /* text-align: right;
+  float: right; */
+  list-style-type: none;
+  display: inline-block
 }
 
 #ready-div {
   background: rgb(246	249	252);
-  color: rgb(146 126 235);
   width: 100%;
   display: inline-block;
   position: relative;
@@ -222,7 +230,7 @@ li {
   left: 0;
   top: -100px;
   width: 100%;
-  height: 290px;
+  height: 310px;
   background: rgb(246	249	252);
   -webkit-transform: skewY(-7.5deg);
   -moz-transform: skewY(-7.5deg);
@@ -230,6 +238,18 @@ li {
   -o-transform: skewY(-7.5deg);
   transform: skewY(-7.5deg);
   -webkit-backface-visibility: hidden;
+}
+
+#ready-div p {
+  position: absolute;
+}
+
+#ready-1 {
+  color: rgb(146 126 235);
+}
+
+#ready-2 {
+  color: rgb(86	5	150)
 }
 
 /* #footer-div:after {
@@ -272,11 +292,33 @@ li {
   #section-4 {
     padding-top: 410px;
   }
+  .grid-content {
+    height: 60px;
+    width: 150px;
+    font-size: 12px;
+  }
+  #grid-div {
+    bottom: -30vh;
+  }
+  #ready-div p {
+    left: 15%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   #section-4 {
     padding-top: 370px;
+  }
+  .grid-content {
+    height: 75px;
+    width: 300px;
+    font-size: 14px;
+  }
+  #grid-div {
+    bottom: -35vh;
+  }
+  #ready-div p {
+    left: 5%;
   }
 }
 
@@ -284,18 +326,51 @@ li {
   #section-4 {
     padding-top: 330px;
   }
+  .grid-content {
+    height: 90px;
+    width: 400px;
+    font-size: 16px;
+  }
+  #grid-div {
+    bottom: -40vh;
+  }
+  #ready-div p {
+    left: 5%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   #section-4 {
     padding-top: 300px;
   }
+  .grid-content {
+    height: 95px;
+    width: 450px;
+    font-size: 18px;
+  }
+  #grid-div {
+    bottom: -42vh;
+  }
+  #ready-div p {
+    left: 18%;
+  }
 }
 
 #grid-div {
+  position: absolute;
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 10px;
+
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100%;
 }
 
 .grid-content {
