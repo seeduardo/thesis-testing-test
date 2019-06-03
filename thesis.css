@@ -13,18 +13,12 @@ h1 {
   text-align: center;
 }
 
-h5 {
-  margin: 0;
-  padding-top: 10px;
-
-}
-
 #home-link {
   text-align: left;
   float: left;
 }
 
-h6 {
+h5 {
   text-align: right;
 }
 
@@ -38,6 +32,13 @@ button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+
+button:hover {
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 .container {
@@ -189,6 +190,12 @@ input {
   padding: 1vh;
 }
 
+#down-button-div button:hover {
+  background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
 #down-button-div {
   right: 40%;
   left: 40%;
@@ -203,7 +210,7 @@ input {
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: -110vh;
+  bottom: -112vh;
   justify-content: flex-end;
 }
 
@@ -245,9 +252,9 @@ input {
   position: absolute;
 }
 
-#ready-div button {
-  /* float: right;
-  position: inherit; */
+#ready-div .account-button {
+  position: absolute;
+  margin-right: 25px;
 }
 
 #ready-1 {
@@ -279,10 +286,8 @@ input {
   left: 25%;
 }
 
-#account-button {
+.account-button {
   background: rgb(122	96 230);
-  position: absolute;
-  left: 55vw;
 }
 
 #contact-button {
@@ -290,6 +295,7 @@ input {
   color: black;
   position: absolute;
   left: 68vw;
+  margin-left: 25px;
 }
 
 #section-4 {
@@ -310,13 +316,24 @@ input {
   .grid-content {
     height: 60px;
     width: 150px;
-    font-size: 12px;
+  }
+  .grid-content h5 {
+    margin: 15px -7px 0 1px;
+  }
+  .grid-content p {
+    display: none;
   }
   #grid-div {
     bottom: -30vh;
   }
   #ready-div p, button {
     left: 15%;
+  }
+  #ready-div .account-button {
+    left: 54vw;
+  }
+  #contact-button {
+    left: 62vw;
   }
 }
 
@@ -327,13 +344,25 @@ input {
   .grid-content {
     height: 75px;
     width: 300px;
-    font-size: 14px;
+    font-size: 22px;
+  }
+  .grid-content h5 {
+    margin: 15px -7px 0 1px;
+  }
+  .grid-content p {
+    display: none;
   }
   #grid-div {
     bottom: -35vh;
   }
   #ready-div p {
     left: 5%;
+  }
+  #ready-div .account-button {
+    left: 70vw;
+  }
+  #contact-button {
+    left: 76vw;
   }
 }
 
@@ -344,6 +373,12 @@ input {
   .grid-content {
     height: 90px;
     width: 400px;
+  }
+  .grid-content h5 {
+    margin: 0 0 0 -170px;
+  }
+  .grid-content p {
+    display: inherit;
     font-size: 16px;
   }
   #grid-div {
@@ -355,6 +390,12 @@ input {
   #button-break {
     display: none;
   }
+  #ready-div .account-button {
+    left: 62vw;
+  }
+  #contact-button {
+    left: 80vw;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -364,6 +405,12 @@ input {
   .grid-content {
     height: 95px;
     width: 450px;
+  }
+  .grid-content h5 {
+    margin: 0 0 0 -170px;
+  }
+  .grid-content p {
+    display: inherit;
     font-size: 18px;
   }
   #grid-div {
@@ -371,6 +418,12 @@ input {
   }
   #ready-div p {
     left: 18%;
+  }
+  #ready-div .account-button {
+    left: 62vw;
+  }
+  #contact-button {
+    left: 74vw;
   }
 }
 
@@ -403,13 +456,27 @@ input {
 .grid-content img {
   grid-column: 1;
   grid-row: 1;
-  width: 15vmin;
-  /* min-width:
-  height: auto; */
+  width: 7vmax;
+  height: 7vmax;
+}
+
+.grid-content h5 {
+  grid-column: 2;
+  grid-row: 1;
+  padding-right: 10px;
+  text-align: left;
 }
 
 .grid-content p {
   grid-column: 2;
-  padding-right: 10px;
-  width: 15vmin;
+  grid-row: 2;
+  margin-top: -60px;
+  margin-left: -170px;
+  text-align: left;
+  color: rgb(181 178	194);
+}
+
+.footer-list-title {
+  font-weight: bold;
+  margin-bottom: 2px;
 }
