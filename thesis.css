@@ -1,25 +1,10 @@
 body {
-  /* background-color: rgb(130	37 225); */
   margin: 0;
-  /* position: relative; */
-}
-
-main {
-  /* position: relative; */
 }
 
 h1 {
   color: white;
   text-align: center;
-}
-
-#home-link {
-  text-align: left;
-  float: left;
-}
-
-h5 {
-  text-align: right;
 }
 
 span {
@@ -34,20 +19,195 @@ button {
   border-radius: 5px;
 }
 
-
-button:hover {
-	background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
+section {
+  padding: 0 20px;
+  padding-bottom: 10px;
+  position: relative;
 }
 
-.container {
-  /* padding-top: 60px; */
+input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#section-1 ul {
+  width: 100%;
+  text-align: right;
+  float: right;
+  list-style-type: none;
+}
+
+#section-1 li {
+  display: inline;
+}
+
+#section-1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 355px;
+  width: 100%;
+  height: 130px;
+  background: rgb(122	96 230);
+  -webkit-transform: skewY(-7.5deg);
+  -moz-transform: skewY(-7.5deg);
+  -ms-transform: skewY(-7.5deg);
+  -o-transform: skewY(-7.5deg);
+  transform: skewY(-7.5deg);
+  -webkit-backface-visibility: hidden;
+}
+
+#home-link {
+  text-align: left;
+  float: left;
+}
+
+#section-2:before {
+  content: '';
+  position: absolute;
+  background: rgb(129 32 222);
+}
+
+#section-2 {
+  height: 320px;
+  text-align: center;
+}
+
+#section-3 {
+  background: white!important;
+  height: 100px;
+  transform: skewY(-7.5deg);
+  top: 125px;
+}
+
+#section-4 {
+  padding: 0;
+  position: absolute;
+  display: inline-block;
+  z-index: 3;
+  color: black;
+  text-align: center;
+  right: 25%;
+  left: 25%;
+}
+
+#domain-div {
+  padding-top: 110px;
+}
+
+#domain-div:after {
+  max-width: 36%;
+  font-size: 10px;
+  right: 40%;
+  left: 40%;
+  content: 'LEARN HOW WE CAN ENHANCE YOUR BUSINESS';
+  background: rgb(122	96 230);
+  position: absolute;
+  bottom: -123px;
+  z-index: 1;
+  text-align: center;
+}
+
+#down-button-div button {
+  border-radius: 15vh;
+  padding: 1vh;
+}
+
+#down-button-div {
+  right: 40%;
+  left: 40%;
+  padding-top: 235px;
+  position: absolute;
+  z-index: 2;
+}
+
+#ready-div {
+  background: rgb(246	249	252);
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  bottom: -100vh;
+  height: 40px;
+}
+
+#ready-div:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 100%;
+  height: 310px;
+  background: rgb(246	249	252);
+  -webkit-transform: skewY(-7.5deg);
+  -moz-transform: skewY(-7.5deg);
+  -ms-transform: skewY(-7.5deg);
+  -o-transform: skewY(-7.5deg);
+  transform: skewY(-7.5deg);
+  -webkit-backface-visibility: hidden;
+}
+
+#ready-div p {
+  position: absolute;
+}
+
+#ready-div .account-button {
+  position: absolute;
+  margin-right: 25px;
+}
+
+#ready-1 {
+  color: rgb(146 126 235);
+}
+
+#ready-2 {
+  color: rgb(86	5	150)
+}
+
+#account-div {
+  padding-top: 310px;
+  position: absolute;
+  display: block;
+  z-index: 3;
+  color: black;
+  min-width: 50%;
+  right: 25%;
+  left: 25%;
+}
+
+#contact-button {
+  background: rgb(255 255 255);
+  color: black;
+  position: absolute;
+  left: 68vw;
+  margin-left: 25px;
+}
+
+#grid-div {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+#footer-div {
+  background: rgb(122	96 230);
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: -112vh;
+  justify-content: flex-end;
+}
+
+#footer-div ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 2vw 0 2vw 10vw;
 }
 
 .main-container {
   background: #8445e2;
-  /* position: relative; */
   color: #FFFFFF;
 }
 
@@ -99,214 +259,58 @@ button:hover {
   -webkit-backface-visibility: hidden;
 }
 
-section {
-  /* margin: 10px 0; */
-  padding: 0 20px;
-  padding-bottom: 10px;
-  position: relative;
-}
-
-#section-2:before {
-  content: '';
-  position: absolute;
-  background: rgb(129 32 222);
-}
-
-#section-1:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 355px;
-  width: 100%;
-  height: 130px;
-  background: rgb(122	96 230);
-  -webkit-transform: skewY(-7.5deg);
-  -moz-transform: skewY(-7.5deg);
-  -ms-transform: skewY(-7.5deg);
-  -o-transform: skewY(-7.5deg);
-  transform: skewY(-7.5deg);
-  -webkit-backface-visibility: hidden;
-}
-
-#section-2 {
-  height: 320px;
-  text-align: center;
-}
-
-#section-3 {
-  background: white!important;
-  height: 100px;
-  transform: skewY(-7.5deg);
-  top: 125px;
-}
-
-input {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-#section-1 ul {
-  width: 100%;
-  text-align: right;
-  float: right;
-  list-style-type: none;
-}
-
-#section-1 li {
-  display: inline;
-}
-
-#domain-div {
-  padding-top: 110px;
-}
-
-#domain-div:after {
-  max-width: 36%;
-  font-size: 10px;
-  right: 40%;
-  left: 40%;
-  content: 'LEARN HOW WE CAN ENHANCE YOUR BUSINESS';
-  background: rgb(122	96 230);
-  position: absolute;
-  bottom: -123px;
-  z-index: 1;
-  text-align: center;
-}
-
-#learn-div:after {
-  /* transform: skewY(7.5deg);
-  content: '';
-  background: #777;
-  height: 29px;
-  width: 100%;
-  position: absolute;
-  bottom: -29px;
-  z-index: 1; */
-}
-
-#down-button {
-  border-radius: 15vh;
-  padding: 1vh;
-}
-
-#down-button-div button:hover {
-  background: rgba(0,0,0,0);
-	color: #3a7999;
-	box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-#down-button-div {
-  right: 40%;
-  left: 40%;
-  padding-top: 235px;
-  position: absolute;
-  z-index: 2;
-}
-
-#footer-div {
-  background: rgb(122	96 230);
-  color: white;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  bottom: -112vh;
-  justify-content: flex-end;
-}
-
-#footer-div ul {
-  /* width: 100%; */
-  /* text-align: right;
-  float: right; */
-  list-style-type: none;
-  display: inline-block;
-  padding: 2vw 6vw 2vw 6vw;
-}
-
-#ready-div {
-  background: rgb(246	249	252);
-  width: 100%;
-  display: inline-block;
-  position: relative;
-  bottom: -100vh;
-  height: 40px;
-}
-
-#ready-div:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -100px;
-  width: 100%;
-  height: 310px;
-  background: rgb(246	249	252);
-  -webkit-transform: skewY(-7.5deg);
-  -moz-transform: skewY(-7.5deg);
-  -ms-transform: skewY(-7.5deg);
-  -o-transform: skewY(-7.5deg);
-  transform: skewY(-7.5deg);
-  -webkit-backface-visibility: hidden;
-}
-
-#ready-div p {
-  position: absolute;
-}
-
-#ready-div .account-button {
-  position: absolute;
-  margin-right: 25px;
-}
-
-#ready-1 {
-  color: rgb(146 126 235);
-}
-
-#ready-2 {
-  color: rgb(86	5	150)
-}
-
-/* #footer-div:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -100px;
-  height: 100px;
-  background: rgb(122	96 230);
-  width: 100%;
-} */
-
-#account-div {
-  padding-top: 310px;
-  position: absolute;
-  display: block;
-  z-index: 3;
-  color: black;
-  min-width: 50%;
-  right: 25%;
-  left: 25%;
-}
-
 .account-button {
   background: rgb(122	96 230);
 }
 
-#contact-button {
-  background: rgb(255 255 255);
-  color: black;
-  position: absolute;
-  left: 68vw;
-  margin-left: 25px;
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100%;
 }
 
-#section-4 {
-  padding: 0;
-  position: absolute;
-  display: inline-block;
-  z-index: 3;
-  color: black;
-  text-align: center;
-  right: 25%;
-  left: 25%;
+.grid-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgba(252 252	253);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0px 20px 0px;
+  border-radius: 5px;
+}
+
+.grid-content img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 7vmax;
+  height: 7vmax;
+}
+
+.cloud img {
+  margin-right: 20px;
+}
+
+.grid-content h5 {
+  grid-column: 2;
+  grid-row: 1;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.grid-content p {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -60px;
+  margin-left: -170px;
+  text-align: left;
+  color: rgb(181 178	194);
+}
+
+.footer-list-title {
+  font-weight: bold;
+  margin-bottom: 2px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -425,58 +429,4 @@ input {
   #contact-button {
     left: 74vw;
   }
-}
-
-#grid-div {
-  position: absolute;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-
-}
-
-.grid-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100%;
-}
-
-.grid-content {
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: rgba(252 252	253);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 20px 0px 20px 0px;
-  border-radius: 5px;
-}
-
-.grid-content img {
-  grid-column: 1;
-  grid-row: 1;
-  width: 7vmax;
-  height: 7vmax;
-}
-
-.grid-content h5 {
-  grid-column: 2;
-  grid-row: 1;
-  padding-right: 10px;
-  text-align: left;
-}
-
-.grid-content p {
-  grid-column: 2;
-  grid-row: 2;
-  margin-top: -60px;
-  margin-left: -170px;
-  text-align: left;
-  color: rgb(181 178	194);
-}
-
-.footer-list-title {
-  font-weight: bold;
-  margin-bottom: 2px;
 }
